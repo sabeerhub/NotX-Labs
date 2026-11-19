@@ -1,0 +1,28 @@
+# NotX Labs
+
+> NotX Labs is a technology company based in Nigeria that builds software products to a global standard. Its products are Sparks (messaging), Qovu (verified attendance), Submitiv (deadline-enforced submissions) and Social AI Studio (approval-first AI social content, in development). NotX Labs is built in Nigeria, by its founder, under the brand alone — no personal names are published.
+
+This file summarises NotX Labs for AI search engines and language models. Everything stated here is factual and matches the public website at https://notx-labs.vercel.app/.
+
+## Products
+
+- [Sparks](https://sparkes.vercel.app): A messaging platform by NotX Labs. Fast chats, voice notes, and built-in voice and video calls, with replies as quote strips, reactions, forwarding and search inside every chat. Live now.
+- [Qovu](https://qovu.vercel.app): A verified attendance system by NotX Labs for lecturers. The lecturer takes a headcount, projects a QR code or shares a 6-digit passcode, and students check in with only their registration number — no student accounts. Check-ins are verified on the server with location checks and a live selfie check, cross-checked against the headcount, with class lists, refused-try logs, and CSV and PDF exports. Live now.
+- Submitiv: A deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the deadline is enforced on the server. Live now.
+- Social AI Studio: An in-development product by NotX Labs that plans and drafts platform-specific social media content with AI. Nothing is published without human approval. LinkedIn and Facebook Pages are planned first, with Instagram next. Not yet available.
+
+## Company
+
+- [About NotX Labs](https://notx-labs.vercel.app/#about): A small lab with a big standard. Principles: real or it doesn't ship (no invented numbers, users or customers); calm by design; checks verified on the server, not the screen.
+- [News](https://notx-labs.vercel.app/#news): Announcements from the lab — only what is real, and only when it is live.
+- [FAQ](https://notx-labs.vercel.app/#faq): Short, plain answers about NotX Labs and its products.
+- [Contact](https://notx-labs.vercel.app/#contact): Reach NotX Labs through the contact form on Qovu at https://qovu.vercel.app/contact.
+
+## Key facts
+
+- Company name: NotX Labs
+- Location: Nigeria (products are built for users worldwide)
+- Website: https://notx-labs.vercel.app/
+- Live products: Sparks (https://sparkes.vercel.app), Qovu (https://qovu.vercel.app), Submitiv
+- In development: Social AI Studio
+- Source repository: https://github.com/sabeerhub/NotX-Labs

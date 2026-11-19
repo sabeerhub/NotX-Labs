@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="480" height="480">
+  <title>notX Labs — Favicon: N</title>
+  <!-- Hand-built vector. The N monogram, for favicon / app icon, like Google's G. -->
+  <!-- Use this alone at small sizes: browser tab, phone home screen, social avatar. -->
+  <polygon points="22,22 36,22 36,98 22,98" fill="#111111"/>
+  <polygon points="84,22 98,22 98,98 84,98" fill="#111111"/>
+  <polygon points="36,22 50,22 84,98 70,98" fill="#0071e3"/>
+</svg>

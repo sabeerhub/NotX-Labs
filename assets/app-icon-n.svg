@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="480" height="480">
+  <title>notX Labs — App icon: N on black</title>
+  <!-- Hand-built vector. Rounded black square, white N, blue diagonal. -->
+  <!-- For phone home screen / app icon, where the mark needs a dark tile. -->
+  <rect x="4" y="4" width="112" height="112" rx="26" fill="#111111"/>
+  <g transform="translate(18,18) scale(0.7)">
+    <polygon points="22,22 36,22 36,98 22,98" fill="#ffffff"/>
+    <polygon points="84,22 98,22 98,98 84,98" fill="#ffffff"/>
+    <polygon points="36,22 50,22 84,98 70,98" fill="#0071e3"/>
+  </g>
+</svg>

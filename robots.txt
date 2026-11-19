@@ -1,0 +1,32 @@
+# robots.txt for NotX Labs — https://notx-labs.vercel.app/
+# On Vercel, place this file at the site root so it is served as /robots.txt
+
+User-agent: *
+Allow: /
+
+# AI search and answer engines are welcome to crawl and cite NotX Labs
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://notx-labs.vercel.app/sitemap.xml
