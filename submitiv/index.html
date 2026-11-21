@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <title>Submitiv — Deadlines that mean it | NotX Labs</title>
+    <meta name="description" content="Submitiv is a deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the server enforces the deadline." />
+    <meta name="author" content="NotX Labs" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="geo.region" content="NG" />
+    <meta name="geo.placename" content="Nigeria" />
+    <link rel="canonical" href="https://notx-labs.vercel.app/submitiv/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-n.svg" />
+    <link rel="apple-touch-icon" href="/assets/app-icon-n.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Archivo:wght@500;600;700;800&amp;family=Great+Vibes&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NotX Labs" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content="https://notx-labs.vercel.app/submitiv/" />
+    <meta property="og:title" content="Submitiv — Deadlines that mean it | NotX Labs" />
+    <meta property="og:description" content="Submitiv is a deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the server enforces the deadline." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Submitiv — Deadlines that mean it | NotX Labs" />
+    <meta name="twitter:description" content="Submitiv is a deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the server enforces the deadline." />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://notx-labs.vercel.app/#organization",
+      "name": "NotX Labs",
+      "url": "https://notx-labs.vercel.app/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://notx-labs.vercel.app/#website",
+      "url": "https://notx-labs.vercel.app/",
+      "name": "NotX Labs",
+      "publisher": {
+        "@id": "https://notx-labs.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://notx-labs.vercel.app/submitiv/#webpage",
+      "url": "https://notx-labs.vercel.app/submitiv/",
+      "name": "Submitiv — Deadlines that mean it | NotX Labs",
+      "isPartOf": {
+        "@id": "https://notx-labs.vercel.app/#website"
+      },
+      "about": {
+        "@id": "https://notx-labs.vercel.app/submitiv/#product"
+      },
+      "description": "Submitiv is a deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the server enforces the deadline.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://notx-labs.vercel.app/submitiv/#product",
+      "name": "Submitiv",
+      "url": "https://notx-labs.vercel.app/submitiv/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Submitiv is a deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the server enforces the deadline.",
+      "creator": {
+        "@id": "https://notx-labs.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://notx-labs.vercel.app/submitiv/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Submitiv?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Submitiv is NotX Labs' deadline-controlled submission platform. You create a request and share one public link; anyone can submit without an account, each submission gets a unique reference and an emailed receipt, and the server enforces the deadline so late submissions are closed automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do people need an account to submit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Anyone can submit through the one public link — no account needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when the deadline passes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The server enforces the deadline, so late submissions close automatically."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --ink: #111111;
+        --ink-2: #3d3d41;
+        --ink-3: #5c5c61;
+        --blue: #0071e3;
+        --blue-dark: #005bb8;
+        --blue-on-black: #2997ff;
+        --bar: #161617;
+        --soft: #f5f5f7;
+        --soft-2: #ececf0;
+        --line: #e3e3e8;
+        --max: 1120px;
+        color-scheme: light;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      html, body { overflow-x: clip; }
+      body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font-family: "Manrope", -apple-system, "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+      }
+      /* ===== Display type — Lusion-style, headlines only.
+         A clean geometric sans (Archivo), very bold with tight
+         letter-spacing, used ONLY where the page needs to feel bold
+         and premium: the hero headline, the section headings, the
+         product names, the FAQ heading, the founder line and the
+         contact heading. Everything else — body text, FAQ answers,
+         labels, buttons, footer — stays in Manrope, our clean sans.
+         The Sparks script wordmark and the mono details are untouched. ===== */
+      .hero-copy h1, .work-head h2, .band .p-name, .sec-head h2,
+      .faq-head h2, .founder blockquote, .contact-in h2 {
+        font-family: "Archivo", "Manrope", -apple-system, "Helvetica Neue", Arial, sans-serif;
+      }
+      img, svg { display: block; }
+      a { color: var(--blue); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      button, [role="button"], summary { min-height: 2.25rem; }
+      :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+      .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+      /* ===== Header — Apple product nav: slim, white, translucent, one blue pill ===== */
+      header.site { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.82); backdrop-filter: blur(16px) saturate(1.6); -webkit-backdrop-filter: blur(16px) saturate(1.6); border-bottom: 1px solid rgba(29,29,31,.09); }
+      .header-in { display: flex; align-items: center; gap: 30px; height: 52px; max-width: 1024px; margin: 0 auto; padding: 0 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 8px; padding: 4px 0; flex: none; }
+      .brand:hover { text-decoration: none; }
+      .brand .n-mark { width: 20px; height: 20px; }
+      .wordmark { font-size: 18px; letter-spacing: -.02em; line-height: 1; white-space: nowrap; color: #1d1d1f; }
+      .wordmark .w-not { font-weight: 700; }
+      .wordmark .w-x { font-weight: 800; color: #0071e3; }
+      .wordmark .w-labs { font-weight: 500; }
+      nav.main { display: flex; align-items: center; gap: 2px; margin: 0 auto; }
+      nav.main a { color: rgba(29,29,31,.82); font-size: 13px; font-weight: 500; padding: 8px 11px; border-radius: 6px; display: inline-flex; align-items: center; min-height: 2.25rem; white-space: nowrap; }
+      nav.main a:hover { color: #1d1d1f; text-decoration: none; }
+      .talk-pill { flex: none; background: #0071e3; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: .04em; padding: 7px 16px; border-radius: 999px; display: inline-flex; align-items: center; min-height: 2.25rem; }
+      .talk-pill:hover { background: #0071e3; filter: brightness(1.08); text-decoration: none; color: #fff; }
+      .menu-btn { display: none; margin-left: auto; background: none; border: 0; cursor: pointer; color: #1d1d1f; font-family: inherit; font-size: 13px; font-weight: 700; letter-spacing: .06em; align-items: center; gap: 7px; padding: 8px 6px; min-height: 2.75rem; }
+      .menu-btn .dots { font-size: 15px; letter-spacing: 1px; }
+      .mobile-nav { display: none; background: #ffffff; padding: 6px 24px 18px; border-bottom: 1px solid rgba(29,29,31,.09); }
+      .mobile-nav a { display: flex; align-items: center; min-height: 3rem; color: #1d1d1f; font-weight: 600; font-size: 16px; border-bottom: 1px solid rgba(29,29,31,.08); }
+      .mobile-nav a:last-child { border-bottom: 0; }
+      body.nav-open .mobile-nav { display: block; }
+
+      /* ===== Backgrounds — plain and clean, like Apple.
+         Solid white and solid soft grey only. No liquid, no canvas,
+         no ripples, no shrinking or stretching background anywhere. ===== */
+
+      /* ===== The blue line — Lusion-style, scroll-drawn.
+         Runs behind the Focus / Craft / Together rows only.
+         Thick, flat, solid #0071e3 with a plain rounded tip —
+         no glow, no dot, no tail — drawn purely from scroll. ===== */
+      main { position: relative; }
+      .line-svg { position: absolute; left: 0; pointer-events: none; }
+      #line2 { top: 0; width: 100%; height: 100%; z-index: 0; }
+      #about { position: relative; }
+      #about .wrap { position: relative; z-index: 1; }
+
+
+      /* Product visual in the last row — our own products, not a stock
+         photo: miniature Sparks / Qovu / Submitiv panels in one card. */
+      .prod-comp { border-radius: 18px; border: 1px solid var(--line); background: #fff; padding: clamp(18px, 2.6vw, 26px); display: flex; flex-direction: column; gap: 12px; min-height: clamp(260px, 32vw, 380px); justify-content: center; }
+      .prod-comp .pc-row { display: flex; align-items: center; gap: 8px 12px; flex-wrap: wrap; background: var(--soft); border-radius: 12px; padding: 13px 15px; text-align: left; }
+      .prod-comp .pc-row .pc-name { font-weight: 800; font-size: 15.5px; letter-spacing: -.01em; white-space: nowrap; }
+      .prod-comp .pc-row .pc-name .script { font-family: "Great Vibes", cursive; font-weight: 400; font-size: 1.25em; }
+      .prod-comp .pc-row .pc-what { color: var(--ink-3); font-size: 13.5px; line-height: 1.4; }
+      .prod-comp .pc-row .pc-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--blue); flex: none; margin-left: auto; }
+      .prod-comp .pc-row .pc-q { font-size: 26px; font-weight: 800; line-height: 1; }
+      .prod-comp .pc-row .pc-q i { color: var(--blue); font-style: normal; }
+
+      /* ===== Hero — clean and static: one headline, one short line, one button ===== */
+      .hero { background: #ffffff; color: #1d1d1f; }
+      .hero-copy { text-align: center; padding: clamp(96px, 15vh, 150px) 24px clamp(80px, 10vh, 112px); }
+      .hero-name { font-size: 12.5px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; margin: 0 0 28px; color: rgba(29,29,31,.46); }
+      .hero-copy h1 { font-size: clamp(46px, 7.4vw, 86px); line-height: 1.05; letter-spacing: -.038em; font-weight: 800; margin: 0 auto 30px; max-width: 13ch; color: #1d1d1f; }
+      .hero-copy p.lede { font-size: clamp(18.5px, 2.2vw, 22.5px); line-height: 1.52; letter-spacing: -.011em; color: rgba(29,29,31,.66); max-width: 44ch; margin: 0 auto 42px; }
+      .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 12px 28px; border-radius: 999px; font-weight: 700; font-size: 16.5px; border: 1px solid transparent; }
+      .btn:hover { text-decoration: none; }
+      .btn-primary { background: var(--blue); color: #fff; }
+      .btn-primary:hover { background: var(--blue-dark); }
+      .hero .btn-primary { background: #0071e3; padding: 15px 32px; font-size: 17px; min-height: 3.25rem; }
+      .hero .btn-primary:hover { background: #0071e3; filter: brightness(1.08); }
+      /* ===== Product bands — one product per band, considered like
+         its own product page. The hierarchy never changes: the NAME
+         first, huge; then ONE short human line; then two quiet link
+         buttons; then the VISUAL as the single focal point, sitting
+         directly on the band's background — no box around it, no
+         description paragraph, no detail grid, nothing else. Every
+         band breathes the same way: the same generous padding above
+         and below, the same gap before the visual, so the section
+         reads as a calm rhythm of four products, not a template
+         repeated four times. White and soft grey alternate so each
+         product owns its own ground. ===== */
+      .work-head { text-align: center; padding: 132px 24px 6px; }
+      .work-head .kicker { font-size: 13px; font-weight: 700; letter-spacing: .18em; color: var(--ink-3); margin: 0 0 14px; }
+      .work-head h2 { font-size: clamp(38px, 6vw, 60px); letter-spacing: -.035em; font-weight: 800; margin: 0; line-height: 1.05; }
+      .band { padding: clamp(104px, 14vh, 156px) 0 clamp(110px, 15vh, 168px); text-align: center; scroll-margin-top: 60px; }
+      .band.alt { background: var(--soft); }
+      .band .p-name { font-size: clamp(52px, 8.2vw, 84px); font-weight: 800; letter-spacing: -.035em; line-height: 1.02; margin: 0; }
+      .band .p-name .script { font-family: "Great Vibes", cursive; font-weight: 400; font-size: 1.22em; letter-spacing: 0; }
+      .band .p-tag { font-size: clamp(22px, 3.1vw, 30px); font-weight: 500; letter-spacing: -.015em; line-height: 1.3; margin: 16px auto 0; color: var(--ink-2); max-width: 30ch; }
+      /* Status — a quiet annotation beside the name, never a badge:
+         one small coloured dot and one small word. */
+      .status { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 700; margin-left: 14px; vertical-align: middle; letter-spacing: .01em; white-space: nowrap; }
+      .status.live { color: #146c2e; }
+      .status.dev { color: #8a5a00; }
+      .status .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+      /* Two quiet buttons only — Apple-style text links in our blue,
+         with a small chevron. No fills, no outlines, no pills. */
+      .band .p-links { display: flex; gap: 36px; justify-content: center; margin-top: 30px; flex-wrap: wrap; }
+      .band .p-links a { display: inline-flex; align-items: center; gap: 5px; min-height: 2.75rem; font-size: 18px; font-weight: 600; letter-spacing: -.01em; color: var(--blue); }
+      .band .p-links a:hover { text-decoration: underline; }
+      .band .p-links a .chev { font-weight: 400; font-size: 1.15em; line-height: 1; }
+      /* The visual — the band's focal point. It sits directly on the
+         background; the opening animation unfolds this wrapper. */
+      .band .visual { max-width: 980px; margin: clamp(58px, 8vh, 84px) auto 0; padding: 0 24px; }
+      /* The stage — a large soft panel behind each product visual,
+         so the band feels full and grounded like an Apple product
+         tile: the crafted visual centred on it, and a quiet row of
+         real product details along the bottom. On white bands the
+         stage is soft grey; on soft-grey bands it is white. */
+      .visual-card { display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--soft); border-radius: 28px; padding: clamp(46px, 6vw, 76px) clamp(22px, 5vw, 72px) clamp(38px, 4.5vw, 54px); }
+      .band.alt .visual-card { background: #ffffff; box-shadow: inset 0 0 0 1px rgba(29,29,31,.05); }
+      /* Real product details — three quiet facts per product that
+         fill the stage without clutter. */
+      .p-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px 34px; width: 100%; margin-top: clamp(38px, 5vw, 54px); padding-top: clamp(26px, 3.4vw, 36px); border-top: 1px solid rgba(29,29,31,.09); text-align: left; }
+      .p-detail strong { display: block; font-size: 15.5px; font-weight: 800; letter-spacing: -.01em; margin-bottom: 5px; }
+      .p-detail span { display: block; font-size: 14px; line-height: 1.5; color: var(--ink-3); }
+
+      /* The product visuals themselves — each product's real identity,
+         presented like a product shot: one clean white surface, a soft
+         deep shadow, room inside, and nothing invented. No fake app
+         screens, no made-up chats, codes or numbers — the product's own
+         mark at full size, and one true line about what it does. */
+      .shot { background: #fff; border: 1px solid rgba(29,29,31,.07); border-radius: 20px; box-shadow: 0 30px 70px rgba(17,17,17,.13), 0 4px 16px rgba(17,17,17,.05); width: 100%; max-width: 560px; min-height: 300px; padding: 44px 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+      .shot .shot-mark { line-height: 1; color: var(--ink); }
+      .shot .shot-mark.script { font-family: "Great Vibes", cursive; font-weight: 400; font-size: clamp(84px, 12vw, 118px); }
+      .shot .shot-mark.q { font-family: "Archivo", "Manrope", sans-serif; font-weight: 800; font-size: clamp(104px, 15vw, 148px); letter-spacing: -.04em; }
+      .shot .shot-mark.q .qd { color: var(--blue); }
+      .shot .shot-mark.word { font-family: "Archivo", "Manrope", sans-serif; font-weight: 800; font-size: clamp(46px, 7.4vw, 66px); letter-spacing: -.035em; }
+      .shot .shot-mark.word .wd { color: var(--blue); }
+      .shot .shot-line { margin: 20px 0 0; font-size: 16.5px; font-weight: 600; letter-spacing: -.01em; color: var(--ink-3); }
+      .studio-visual { text-align: center; padding: 12px 0 4px; }
+      .studio-visual .n-mark { width: 76px; height: 76px; margin: 0 auto 22px; opacity: .92; }
+      .studio-visual p { color: var(--ink); font-size: 19px; font-weight: 600; letter-spacing: -.01em; margin: 0 auto; max-width: 34ch; line-height: 1.45; }
+      .platforms { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px; color: var(--ink-3); font-size: 14px; font-weight: 600; letter-spacing: .02em; }
+      .platforms span + span::before { content: "·"; margin-right: 10px; color: var(--ink-3); }
+
+      /* ===== About / principles / people ===== */
+      section.block { padding: 96px 0 8px; scroll-margin-top: 60px; }
+      .sec-head { max-width: 720px; margin-bottom: 44px; }
+      .sec-head h2 { font-size: clamp(30px, 4.6vw, 44px); letter-spacing: -.03em; line-height: 1.12; font-weight: 800; margin: 0 0 12px; }
+      .sec-head p { color: var(--ink-2); font-size: 18px; margin: 0; }
+      .principles { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+      .principle { padding: 30px 28px 30px 0; }
+      .principle + .principle { border-left: 1px solid var(--line); padding-left: 28px; }
+      .principle .num { font-family: "IBM Plex Mono", monospace; color: var(--blue); font-size: 13.5px; }
+      .principle h3 { font-size: 20px; letter-spacing: -.015em; margin: 10px 0 8px; font-weight: 800; }
+      .principle p { color: var(--ink-2); margin: 0; font-size: 16px; }
+      /* People — alternating rows on desktop: photo left / text right, then photo
+         right / text left, then photo left / text right. Stacked on mobile. */
+      .people { margin-top: 48px; }
+      .person-row { display: grid; grid-template-columns: 1.08fr 1fr; gap: clamp(36px, 6vw, 76px); align-items: center; padding: 44px 0; }
+      .person-row + .person-row { border-top: 1px solid var(--line); }
+      .person-row figure { margin: 0; }
+      .person-row img { width: 100%; height: clamp(260px, 32vw, 380px); object-fit: cover; border-radius: 18px; border: 1px solid var(--line); background: var(--soft); }
+      @media (min-width: 901px) {
+        .person-row.flip figure { order: 2; }
+      }
+      .person-text h3 { font-size: clamp(24px, 3vw, 32px); letter-spacing: -.02em; font-weight: 800; margin: 0 0 10px; }
+      .person-text p { color: var(--ink-2); font-size: 17.5px; line-height: 1.55; margin: 0; max-width: 38ch; }
+
+      /* ===== News ===== */
+      .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .news-card { border: 1px solid var(--line); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; background: #fff; }
+      .news-card time { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+      .news-card h3 { font-size: 20.5px; letter-spacing: -.015em; line-height: 1.3; margin: 12px 0 10px; font-weight: 800; }
+      .news-card p { color: var(--ink-2); font-size: 15.5px; margin: 0 0 18px; }
+      .news-card a { margin-top: auto; font-weight: 700; font-size: 15px; display: inline-flex; align-items: center; min-height: 2.25rem; }
+
+      /* ===== FAQ — Apple premium: one question per row, hairline dividers,
+         quiet plus/minus, calm answers with room to breathe. No boxes, no cards. ===== */
+      .faq-section { padding: 128px 0 124px; }
+      .faq-head { margin: 0 0 58px; }
+      .faq-head h2 { font-size: clamp(40px, 5.6vw, 56px); letter-spacing: -.032em; line-height: 1.08; font-weight: 800; margin: 0; color: #1d1d1f; }
+      .faq-list { border-top: 1px solid rgba(29,29,31,.16); }
+      .faq-item { border-bottom: 1px solid rgba(29,29,31,.16); }
+      .faq-item h3 { margin: 0; font: inherit; }
+      .faq-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 28px; background: none; border: 0; border-radius: 0; padding: 30px 2px; margin: 0; font-family: inherit; font-size: clamp(19px, 2.3vw, 23px); font-weight: 600; letter-spacing: -.018em; line-height: 1.3; color: #1d1d1f; text-align: left; cursor: pointer; }
+      .faq-icon { position: relative; flex: none; width: 16px; height: 16px; color: rgba(29,29,31,.5); transition: color .3s ease; }
+      .faq-btn:hover .faq-icon, .faq-item.open .faq-icon { color: #0071e3; }
+      .faq-icon .bar { position: absolute; left: 0; top: 50%; width: 100%; height: 1.8px; margin-top: -.9px; background: currentColor; border-radius: 2px; }
+      .faq-icon .bar.v { transform: rotate(90deg); transition: transform .45s cubic-bezier(.32,.72,.24,1); }
+      .faq-item.open .faq-icon .bar.v { transform: rotate(0deg); }
+      .faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .5s cubic-bezier(.32,.72,.24,1); }
+      .faq-item.open .faq-a { grid-template-rows: 1fr; }
+      .faq-a-in { overflow: hidden; min-height: 0; }
+      .faq-a p { margin: 0; padding: 0 2px 38px; max-width: 72ch; font-size: 17px; line-height: 1.65; font-weight: 400; color: rgba(29,29,31,.78); }
+      .faq-a p a { font-weight: 600; }
+
+      /* ===== Founder note ===== */
+      .founder { padding: 110px 0; text-align: center; }
+      .founder .n-mark { width: 44px; height: 44px; margin: 0 auto 26px; }
+      .founder blockquote { margin: 0 auto; max-width: 22ch; font-size: clamp(28px, 4.6vw, 42px); font-weight: 800; letter-spacing: -.025em; line-height: 1.2; }
+      .founder p { color: var(--ink-3); margin: 18px auto 0; max-width: 52ch; font-size: 16.5px; }
+
+      /* ===== Contact ===== */
+      .contact-band { background: var(--soft); border-top: 1px solid var(--line); scroll-margin-top: 48px; }
+      .contact-in { padding: 72px 0; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+      .contact-in h2 { font-size: clamp(28px, 4vw, 38px); letter-spacing: -.025em; margin: 0 0 10px; font-weight: 800; }
+      .contact-in p { color: var(--ink-2); margin: 0; max-width: 46ch; }
+      .contact-links { display: flex; flex-direction: column; gap: 10px; }
+      .contact-links a { background: #fff; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); padding: 14px 18px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; min-height: 3.25rem; }
+      .contact-links a:hover { border-color: var(--blue); color: var(--blue); text-decoration: none; }
+      .contact-links a small { font-weight: 600; color: var(--ink-3); }
+
+      /* ===== Footer — Apple: directory on soft gray ===== */
+      footer.site { background: var(--soft); padding: 54px 0 36px; }
+      .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid #d8d8de; }
+      .foot-brand p { color: var(--ink-3); font-size: 14.5px; max-width: 30ch; margin: 14px 0 0; }
+      .foot-col h4 { font-size: 13px; letter-spacing: .06em; color: var(--ink); margin: 4px 0 12px; font-weight: 700; }
+      .foot-col a { display: flex; align-items: center; min-height: 2.25rem; color: var(--ink-2); font-size: 14.5px; font-weight: 500; padding: 3px 0; }
+      .foot-col a:hover { color: var(--ink); }
+      .foot-legal { padding-top: 22px; }
+      .foot-legal details { border-top: 1px solid #d8d8de; padding: 6px 0; }
+      .foot-legal summary { cursor: pointer; font-weight: 700; font-size: 15px; color: var(--ink-2); display: flex; align-items: center; padding: 6px 0; }
+      .foot-legal details p { color: var(--ink-3); font-size: 14.5px; max-width: 68ch; margin: 4px 0 14px; }
+      .foot-base { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; padding-top: 24px; color: var(--ink-3); font-size: 13.5px; }
+
+      /* ===== Responsive ===== */
+      @media (max-width: 900px) {
+        nav.main { display: none; }
+        .talk-pill { display: none; }
+        .menu-btn { display: inline-flex; }
+        .principles { grid-template-columns: 1fr; }
+        .principle { padding: 24px 0; }
+        .principle + .principle { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
+        .person-row { grid-template-columns: 1fr; gap: 22px; padding: 36px 0; }
+        .person-row img { height: 230px; }
+        .news-grid { grid-template-columns: 1fr; }
+        .contact-in { grid-template-columns: 1fr; padding: 52px 0; }
+        .foot-grid { grid-template-columns: 1fr 1fr; }
+        section.block { padding-top: 72px; }
+        .band { padding: 88px 0 96px; }
+        .band .p-links { gap: 28px; }
+        .p-details { grid-template-columns: 1fr; gap: 20px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .faq-a, .faq-icon .bar.v, .faq-icon { transition: none; }
+      }
+    
+      /* Product pages — small additions only; everything else is the home page CSS. */
+      .back-link { display: inline-block; margin-top: 30px; font-weight: 600; font-size: 16px; }
+      .page-steps { padding-top: 24px; }
+      .more-grid { margin-top: 8px; }
+
+    </style>
+  </head>
+  <body>
+<header class="site">
+      <div class="header-in">
+        <a class="brand" href="/" aria-label="NotX Labs — home">
+          <svg class="n-mark" viewBox="0 0 120 120" aria-hidden="true"><polygon points="22,22 36,22 36,98 22,98" fill="#1d1d1f"/><polygon points="84,22 98,22 98,98 84,98" fill="#1d1d1f"/><polygon points="36,22 50,22 84,98 70,98" fill="#0071e3"/></svg>
+          <span class="wordmark"><span class="w-not">Not</span><span class="w-x">X</span><span class="w-labs">&nbsp;Labs</span></span>
+        </a>
+        <nav class="main" aria-label="Main">
+          <a href="/sparks/">Sparks</a>
+          <a href="/qovu/">Qovu</a>
+          <a href="/submitiv/">Submitiv</a>
+          <a href="/studio/">Studio</a>
+          <a href="/#about">About</a>
+          <a href="/#news">News</a>
+          <a href="/#faq">FAQ</a>
+        </nav>
+        <a class="talk-pill" href="#contact">LET'S TALK</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">MENU <span class="dots">&#8226;&#8226;</span></button>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="/sparks/">Sparks</a>
+        <a href="/qovu/">Qovu</a>
+        <a href="/submitiv/">Submitiv</a>
+        <a href="/studio/">Social AI Studio</a>
+        <a href="/#about">About</a>
+        <a href="/#news">News</a>
+        <a href="/#faq">FAQ</a>
+        <a href="#contact">Let's Talk</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="hero-name">NotX Labs &middot; Submitiv</p>
+          <h1>Submitiv</h1>
+          <p class="lede">Deadlines that mean it.</p>
+          <a class="btn btn-primary" href="/#products">See all products</a>
+          <br />
+          <a class="back-link" href="/">&larr; All products</a>
+        </div>
+      </section>
+      <section class="band alt" id="submitiv">
+        <div class="wrap">
+          <h2 class="p-name">Submitiv<span class="status live"><span class="dot"></span>Live</span></h2>
+          <p class="p-tag">Deadlines that mean it.</p>
+          <div class="visual"><div class="visual-card">
+            <div class="shot" aria-hidden="true">
+              <span class="shot-mark word">Submitiv<span class="wd">.</span></span><p class="shot-line">Deadline-controlled submissions</p>
+            </div>
+            <div class="p-details">
+<div class="p-detail"><strong>One public link</strong><span>Share a request once — anyone can submit, no account needed.</span></div>
+<div class="p-detail"><strong>Reference &amp; receipt</strong><span>Every submission gets a unique reference and an emailed receipt.</span></div>
+<div class="p-detail"><strong>Server-enforced deadline</strong><span>When time is up, submissions close — automatically.</span></div>
+            </div>
+          </div></div>
+        </div>
+      </section>
+      <section class="block page-steps">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>How it works.</h2>
+            <p>Three steps. Nothing hidden, nothing extra.</p>
+          </div>
+          <div class="principles">
+<div class="principle">
+<span class="num">01</span>
+<h3>Create a request</h3>
+<p>Set what you need, and when it is due.</p>
+</div>
+<div class="principle">
+<span class="num">02</span>
+<h3>Share one link</h3>
+<p>Anyone can submit through the link — no account needed.</p>
+</div>
+<div class="principle">
+<span class="num">03</span>
+<h3>Review on time</h3>
+<p>Every submission gets a unique reference and an emailed receipt. When time is up, submissions close — automatically.</p>
+</div>
+          </div>
+        </div>
+      </section>
+      <section class="block faq-section" id="faq">
+        <div class="wrap">
+          <div class="faq-head">
+            <h2>Frequently asked questions</h2>
+          </div>
+          <div class="faq-list">
+<div class="faq-item">
+<h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1"><span>What is Submitiv?</span><span class="faq-icon" aria-hidden="true"><span class="bar"></span><span class="bar v"></span></span></button></h3>
+<div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div class="faq-a-in">
+<p>Submitiv is NotX Labs' deadline-controlled submission platform. You create a request and share one public link; anyone can submit without an account, each submission gets a unique reference and an emailed receipt, and the server enforces the deadline so late submissions are closed automatically.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Do people need an account to submit?</span><span class="faq-icon" aria-hidden="true"><span class="bar"></span><span class="bar v"></span></span></button></h3>
+<div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div class="faq-a-in">
+<p>No. Anyone can submit through the one public link — no account needed.</p>
+</div></div>
+</div>
+<div class="faq-item">
+<h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>What happens when the deadline passes?</span><span class="faq-icon" aria-hidden="true"><span class="bar"></span><span class="bar v"></span></span></button></h3>
+<div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div class="faq-a-in">
+<p>The server enforces the deadline, so late submissions close automatically.</p>
+</div></div>
+</div>
+          </div>
+        </div>
+      </section>
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>More from NotX Labs.</h2>
+          </div>
+          <div class="news-grid more-grid">
+<article class="news-card">
+<time>Live now</time>
+<h3>Sparks</h3>
+<p>Talk, beautifully.</p>
+<a href="/sparks/">Learn more&nbsp;&rarr;</a>
+</article>
+<article class="news-card">
+<time>Live now</time>
+<h3>Qovu</h3>
+<p>Attendance, verified.</p>
+<a href="/qovu/">Learn more&nbsp;&rarr;</a>
+</article>
+<article class="news-card">
+<time>In development</time>
+<h3>Social AI Studio</h3>
+<p>Content, planned by AI. Approved by you.</p>
+<a href="/studio/">Learn more&nbsp;&rarr;</a>
+</article>
+          </div>
+        </div>
+      </section>
+<section class="contact-band" id="contact">
+        <div class="wrap contact-in">
+          <div>
+            <h2>Let's talk.</h2>
+            <p>Questions about a product, or a product of your own you'd like built to this standard? Reach us through the live products — every message is read by a human.</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://qovu.vercel.app/contact" target="_blank" rel="noopener"><span>Contact form</span><small>via Qovu</small></a>
+            <a href="https://qovu.vercel.app" target="_blank" rel="noopener"><span>Qovu</span><small>qovu.vercel.app</small></a>
+            <a href="https://sparkes.vercel.app" target="_blank" rel="noopener"><span>Sparks</span><small>sparkes.vercel.app</small></a>
+          </div>
+        </div>
+      </section>
+    </main>
+<footer class="site">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <a class="brand" href="/" aria-label="NotX Labs — back to top">
+              <svg class="n-mark" viewBox="0 0 120 120" aria-hidden="true" style="width:22px;height:22px;"><polygon points="22,22 36,22 36,98 22,98" fill="#111111"/><polygon points="84,22 98,22 98,98 84,98" fill="#111111"/><polygon points="36,22 50,22 84,98 70,98" fill="#0071e3"/></svg>
+              <span class="wordmark"><span class="w-not">Not</span><span class="w-x">X</span><span class="w-labs">&nbsp;Labs</span></span>
+            </a>
+            <p>A technology company building software products to a global standard.</p>
+          </div>
+          <div class="foot-col">
+            <h4>Products</h4>
+            <a href="/sparks/">Sparks</a>
+            <a href="/qovu/">Qovu</a>
+            <a href="/submitiv/">Submitiv</a>
+            <a href="/studio/">Social AI Studio</a>
+          </div>
+          <div class="foot-col">
+            <h4>Company</h4>
+            <a href="/#about">About</a>
+            <a href="/#news">News</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/#contact">Contact</a>
+            <a href="data:text/plain;base64,IyBOb3RYIExhYnMKCj4gTm90WCBMYWJzIGlzIGEgdGVjaG5vbG9neSBjb21wYW55IGJhc2VkIGluIE5pZ2VyaWEgdGhhdCBidWlsZHMgc29mdHdhcmUgcHJvZHVjdHMgdG8gYSBnbG9iYWwgc3RhbmRhcmQuIEl0cyBwcm9kdWN0cyBhcmUgU3BhcmtzIChtZXNzYWdpbmcpLCBRb3Z1ICh2ZXJpZmllZCBhdHRlbmRhbmNlKSwgU3VibWl0aXYgKGRlYWRsaW5lLWVuZm9yY2VkIHN1Ym1pc3Npb25zKSBhbmQgU29jaWFsIEFJIFN0dWRpbyAoYXBwcm92YWwtZmlyc3QgQUkgc29jaWFsIGNvbnRlbnQsIGluIGRldmVsb3BtZW50KS4gTm90WCBMYWJzIGlzIGJ1aWx0IGluIE5pZ2VyaWEsIGJ5IGl0cyBmb3VuZGVyLCB1bmRlciB0aGUgYnJhbmQgYWxvbmUg4oCUIG5vIHBlcnNvbmFsIG5hbWVzIGFyZSBwdWJsaXNoZWQuCgpUaGlzIGZpbGUgc3VtbWFyaXNlcyBOb3RYIExhYnMgZm9yIEFJIHNlYXJjaCBlbmdpbmVzIGFuZCBsYW5ndWFnZSBtb2RlbHMuIEV2ZXJ5dGhpbmcgc3RhdGVkIGhlcmUgaXMgZmFjdHVhbCBhbmQgbWF0Y2hlcyB0aGUgcHVibGljIHdlYnNpdGUgYXQgaHR0cHM6Ly9ub3R4LWxhYnMudmVyY2VsLmFwcC8uCgojIyBQcm9kdWN0cwoKLSBbU3BhcmtzXShodHRwczovL25vdHgtbGFicy52ZXJjZWwuYXBwL3NwYXJrcy8pOiBBIG1lc3NhZ2luZyBwbGF0Zm9ybSBieSBOb3RYIExhYnMuIEZhc3QgY2hhdHMsIHZvaWNlIG5vdGVzLCBhbmQgYnVpbHQtaW4gdm9pY2UgYW5kIHZpZGVvIGNhbGxzLCB3aXRoIHJlcGxpZXMgYXMgcXVvdGUgc3RyaXBzLCByZWFjdGlvbnMsIGZvcndhcmRpbmcgYW5kIHNlYXJjaCBpbnNpZGUgZXZlcnkgY2hhdC4gTGl2ZSBub3cgYXQgaHR0cHM6Ly9zcGFya2VzLnZlcmNlbC5hcHAuCi0gW1FvdnVdKGh0dHBzOi8vbm90eC1sYWJzLnZlcmNlbC5hcHAvcW92dS8pOiBBIHZlcmlmaWVkIGF0dGVuZGFuY2Ugc3lzdGVtIGJ5IE5vdFggTGFicyBmb3IgbGVjdHVyZXJzLiBUaGUgbGVjdHVyZXIgdGFrZXMgYSBoZWFkY291bnQsIHByb2plY3RzIGEgUVIgY29kZSBvciBzaGFyZXMgYSA2LWRpZ2l0IHBhc3Njb2RlLCBhbmQgc3R1ZGVudHMgY2hlY2sgaW4gd2l0aCBvbmx5IHRoZWlyIHJlZ2lzdHJhdGlvbiBudW1iZXIg4oCUIG5vIHN0dWRlbnQgYWNjb3VudHMuIENoZWNrLWlucyBhcmUgdmVyaWZpZWQgb24gdGhlIHNlcnZlciB3aXRoIGxvY2F0aW9uIGNoZWNrcyBhbmQgYSBsaXZlIHNlbGZpZSBjaGVjaywgY3Jvc3MtY2hlY2tlZCBhZ2FpbnN0IHRoZSBoZWFkY291bnQsIHdpdGggY2xhc3MgbGlzdHMsIHJlZnVzZWQtdHJ5IGxvZ3MsIGFuZCBDU1YgYW5kIFBERiBleHBvcnRzLiBMaXZlIG5vdyBhdCBodHRwczovL3FvdnUudmVyY2VsLmFwcC4KLSBbU3VibWl0aXZdKGh0dHBzOi8vbm90eC1sYWJzLnZlcmNlbC5hcHAvc3VibWl0aXYvKTogQSBkZWFkbGluZS1jb250cm9sbGVkIHN1Ym1pc3Npb24gcGxhdGZvcm0gYnkgTm90WCBMYWJzLiBDcmVhdGUgYSByZXF1ZXN0LCBzaGFyZSBvbmUgcHVibGljIGxpbmssIGFuZCBhbnlvbmUgY2FuIHN1Ym1pdCB3aXRob3V0IGFuIGFjY291bnQuIEV2ZXJ5IHN1Ym1pc3Npb24gZ2V0cyBhIHVuaXF1ZSByZWZlcmVuY2UgYW5kIGFuIGVtYWlsZWQgcmVjZWlwdCwgYW5kIHRoZSBkZWFkbGluZSBpcyBlbmZvcmNlZCBvbiB0aGUgc2VydmVyLiBMaXZlIG5vdy4KLSBbU29jaWFsIEFJIFN0dWRpb10oaHR0cHM6Ly9ub3R4LWxhYnMudmVyY2VsLmFwcC9zdHVkaW8vKTogQW4gaW4tZGV2ZWxvcG1lbnQgcHJvZHVjdCBieSBOb3RYIExhYnMgdGhhdCBwbGFucyBhbmQgZHJhZnRzIHBsYXRmb3JtLXNwZWNpZmljIHNvY2lhbCBtZWRpYSBjb250ZW50IHdpdGggQUkuIE5vdGhpbmcgaXMgcHVibGlzaGVkIHdpdGhvdXQgaHVtYW4gYXBwcm92YWwuIExpbmtlZEluIGFuZCBGYWNlYm9vayBQYWdlcyBhcmUgcGxhbm5lZCBmaXJzdCwgd2l0aCBJbnN0YWdyYW0gbmV4dC4gTm90IHlldCBhdmFpbGFibGUuCgojIyBDb21wYW55CgotIFtBYm91dCBOb3RYIExhYnNdKGh0dHBzOi8vbm90eC1sYWJzLnZlcmNlbC5hcHAvI2Fib3V0KTogQSBzbWFsbCBsYWIgd2l0aCBhIGJpZyBzdGFuZGFyZC4gUHJpbmNpcGxlczogcmVhbCBvciBpdCBkb2Vzbid0IHNoaXAgKG5vIGludmVudGVkIG51bWJlcnMsIHVzZXJzIG9yIGN1c3RvbWVycyk7IGNhbG0gYnkgZGVzaWduOyBjaGVja3MgdmVyaWZpZWQgb24gdGhlIHNlcnZlciwgbm90IHRoZSBzY3JlZW4uCi0gW05ld3NdKGh0dHBzOi8vbm90eC1sYWJzLnZlcmNlbC5hcHAvI25ld3MpOiBBbm5vdW5jZW1lbnRzIGZyb20gdGhlIGxhYiDigJQgb25seSB3aGF0IGlzIHJlYWwsIGFuZCBvbmx5IHdoZW4gaXQgaXMgbGl2ZS4KLSBbRkFRXShodHRwczovL25vdHgtbGFicy52ZXJjZWwuYXBwLyNmYXEpOiBTaG9ydCwgcGxhaW4gYW5zd2VycyBhYm91dCBOb3RYIExhYnMgYW5kIGl0cyBwcm9kdWN0cy4KLSBbQ29udGFjdF0oaHR0cHM6Ly9ub3R4LWxhYnMudmVyY2VsLmFwcC8jY29udGFjdCk6IFJlYWNoIE5vdFggTGFicyB0aHJvdWdoIHRoZSBjb250YWN0IGZvcm0gb24gUW92dSBhdCBodHRwczovL3FvdnUudmVyY2VsLmFwcC9jb250YWN0LgoKIyMgS2V5IGZhY3RzCgotIENvbXBhbnkgbmFtZTogTm90WCBMYWJzCi0gTG9jYXRpb246IE5pZ2VyaWEgKHByb2R1Y3RzIGFyZSBidWlsdCBmb3IgdXNlcnMgd29ybGR3aWRlKQotIFdlYnNpdGU6IGh0dHBzOi8vbm90eC1sYWJzLnZlcmNlbC5hcHAvCi0gTGl2ZSBwcm9kdWN0czogU3BhcmtzIChodHRwczovL3NwYXJrZXMudmVyY2VsLmFwcCksIFFvdnUgKGh0dHBzOi8vcW92dS52ZXJjZWwuYXBwKSwgU3VibWl0aXYKLSBJbiBkZXZlbG9wbWVudDogU29jaWFsIEFJIFN0dWRpbwotIFNvdXJjZSByZXBvc2l0b3J5OiBodHRwczovL2dpdGh1Yi5jb20vc2FiZWVyaHViL05vdFgtTGFicwo=">llms.txt</a>
+          </div>
+          <div class="foot-col">
+            <h4>Live sites</h4>
+            <a href="https://qovu.vercel.app" target="_blank" rel="noopener">Qovu&nbsp;&#8599;</a>
+            <a href="https://sparkes.vercel.app" target="_blank" rel="noopener">Sparks&nbsp;&#8599;</a>
+            <a href="https://qovu.vercel.app/privacy" target="_blank" rel="noopener">Qovu Privacy&nbsp;&#8599;</a>
+            <a href="https://qovu.vercel.app/terms" target="_blank" rel="noopener">Qovu Terms&nbsp;&#8599;</a>
+          </div>
+        </div>
+        <div class="foot-legal">
+          <details>
+            <summary>Privacy</summary>
+            <p>Each NotX Labs product collects only the data it needs to work, and each live product carries its own privacy policy — Qovu's is linked above. This company page itself collects nothing: no accounts, no tracking forms, no cookies set by us.</p>
+          </details>
+          <details>
+            <summary>Terms</summary>
+            <p>Use of each NotX Labs product is governed by that product's own terms of service, linked from the product itself. Product names and the N mark belong to NotX Labs.</p>
+          </details>
+        </div>
+        <div class="foot-base">
+          <span>&copy; 2026 NotX Labs. All rights reserved.</span>
+          <span>Built in Nigeria.</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        /* Mobile menu */
+        var btn = document.getElementById("menuBtn");
+        btn.addEventListener("click", function () {
+          var open = document.body.classList.toggle("nav-open");
+          btn.setAttribute("aria-expanded", open ? "true" : "false");
+          btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        });
+        document.getElementById("mobileNav").addEventListener("click", function (e) {
+          if (e.target.tagName === "A") {
+            document.body.classList.remove("nav-open");
+            btn.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        /* People photos — decode both bitmaps up front, so neither
+           photo can ever paint as an empty placeholder frame when
+           its row is reached, in a capture or on a slow phone. The
+           Craft photo is the second one down and was the one that
+           raced its decode and lost. */
+        document.querySelectorAll(".person-row img").forEach(function (img) {
+          if (img.decode) { img.decode().catch(function () {}); }
+        });
+
+        /* FAQ accordion — one answer open at a time, plus rotates to minus */
+        var faqBtns = document.querySelectorAll(".faq-btn");
+        faqBtns.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var item = b.closest(".faq-item");
+            var willOpen = !item.classList.contains("open");
+            document.querySelectorAll(".faq-item.open").forEach(function (it) {
+              it.classList.remove("open");
+              it.querySelector(".faq-btn").setAttribute("aria-expanded", "false");
+            });
+            if (willOpen) {
+              item.classList.add("open");
+              b.setAttribute("aria-expanded", "true");
+            }
+          });
+        });
+
+        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        function clamp01(v) { return Math.max(0, Math.min(1, v)); }
+
+        /* ===== Features opening — the meaningful animation.
+           Each product band is a feature of the work we have done. As
+           scrolling brings a feature in, its visual — the band's one
+           focal point — unfolds open: the side edges part and the
+           visual settles to full size. The amount of opening is a
+           pure function of scroll position, and once a feature is
+           fully open it stays open. Nothing opens before it is
+           reached; the photos are not part of this. ===== */
+        var featureBands = [];
+        document.querySelectorAll(".band").forEach(function (band) {
+          featureBands.push({ visual: band.querySelector(".visual-card") });
+        });
+        function drawFeatures() {
+          var vh = window.innerHeight;
+          featureBands.forEach(function (f) {
+            if (!f.visual) return;
+            var r = f.visual.getBoundingClientRect();
+            var p = reduceMotion ? 1 : clamp01((vh * 0.92 - r.top) / (vh * 0.55));
+            var side = ((1 - p) * 42).toFixed(2);
+            f.visual.style.clipPath = "inset(0 " + side + "% 0 " + side + "%)";
+            f.visual.style.transform = "scale(" + (0.94 + p * 0.06).toFixed(4) + ")";
+            f.visual.style.opacity = (0.25 + p * 0.75).toFixed(3);
+          });
+        }
+
+        /* ===== The blue line — drawn from scroll position.
+           Its path is MEASURED from the live layout on every
+           build. It starts fresh from the left at Focus and
+           threads behind the three people rows — behind the
+           photos, through the empty gaps between the rows —
+           and ends at Together. Nothing else on the page has
+           a line. ===== */
+        var mainEl = document.querySelector("main");
+        var aboutSec = document.getElementById("about");
+        var svg2 = document.getElementById("line2");
+        var path2 = document.getElementById("line2Path");
+        var L2 = null;
+        function relTo(el, anc) {
+          var r = el.getBoundingClientRect(), a = anc.getBoundingClientRect();
+          return { left: r.left - a.left, right: r.right - a.left, top: r.top - a.top, bottom: r.bottom - a.top, cx: (r.left + r.right) / 2 - a.left, cy: (r.top + r.bottom) / 2 - a.top };
+        }
+        function f1(n) { return Math.round(n * 10) / 10; }
+        function buildLines() {
+          if (!mainEl || !aboutSec || !svg2 || !path2) return;
+          var W = mainEl.clientWidth;
+          var sw = W < 700 ? 13 : 20;
+          /* ---- Focus / Craft / Together only ---- */
+          var rows = aboutSec.querySelectorAll(".person-row");
+          if (rows.length >= 3) {
+            var SW = aboutSec.clientWidth;
+            var img1 = relTo(rows[0].querySelector("figure"), aboutSec);
+            var img2 = relTo(rows[1].querySelector("figure"), aboutSec);
+            var card3 = relTo(rows[2].querySelector(".prod-comp"), aboutSec);
+            var row3 = relTo(rows[2], aboutSec);
+            var d2 = "", y2e;
+            path2.setAttribute("stroke-width", sw);
+            if (SW >= 901) {
+              y2e = row3.bottom - 48;
+              d2 = "M 0 " + f1(img1.cy);
+              d2 += " C " + f1(SW * 0.2) + " " + f1(img1.cy + 6) + " " + f1(img1.right - 90) + " " + f1(img1.bottom - 30) + " " + f1(img1.right - 20) + " " + f1(img1.bottom + 30);
+              d2 += " C " + f1(SW * 0.55) + " " + f1(img1.bottom + 84) + " " + f1(img2.left - 170) + " " + f1(img2.top - 84) + " " + f1(img2.left + 20) + " " + f1(img2.top - 30);
+              d2 += " C " + f1(img2.left + 150) + " " + f1(img2.top + 14) + " " + f1(img2.cx - 120) + " " + f1(img2.cy - 60) + " " + f1(img2.cx) + " " + f1(img2.cy);
+              d2 += " C " + f1(img2.cx - 150) + " " + f1(img2.cy + 80) + " " + f1(img2.left + 78) + " " + f1(img2.bottom - 40) + " " + f1(img2.left - 12) + " " + f1(img2.bottom + 26);
+              d2 += " C " + f1(img2.left - 142) + " " + f1(img2.bottom + 66) + " " + f1(card3.right + 140) + " " + f1(card3.top - 64) + " " + f1(card3.right - 30) + " " + f1(card3.top - 24);
+              d2 += " C " + f1(card3.right - 150) + " " + f1(card3.top + 16) + " " + f1(card3.cx + 130) + " " + f1(card3.cy - 30) + " " + f1(card3.cx) + " " + f1(card3.cy);
+              d2 += " C " + f1(card3.cx - 150) + " " + f1(card3.cy + 56) + " " + f1(SW * 0.14) + " " + f1(y2e - 26) + " 0 " + f1(y2e);
+            } else {
+              var xR = SW - 18;
+              y2e = row3.bottom - 30;
+              d2 = "M 0 " + f1(img1.cy);
+              d2 += " C " + f1(SW * 0.3) + " " + f1(img1.cy) + " " + f1(img1.right - 60) + " " + f1(img1.cy + 26) + " " + f1(img1.right - 4) + " " + f1(img1.cy + 52);
+              d2 += " C " + f1(xR) + " " + f1(img1.bottom + 44) + " " + f1(xR) + " " + f1(img2.top - 60) + " " + f1(xR) + " " + f1(img2.top - 16);
+              d2 += " C " + f1(xR - 6) + " " + f1(img2.top + 44) + " " + f1(img2.cx + 90) + " " + f1(img2.cy - 30) + " " + f1(img2.cx) + " " + f1(img2.cy);
+              d2 += " C " + f1(img2.cx - 110) + " " + f1(img2.cy + 44) + " " + f1(img2.right - 2) + " " + f1(img2.bottom - 44) + " " + f1(xR) + " " + f1(img2.bottom - 8);
+              d2 += " C " + f1(xR) + " " + f1(img2.bottom + 52) + " " + f1(xR) + " " + f1(card3.top - 58) + " " + f1(xR) + " " + f1(card3.top - 16);
+              d2 += " C " + f1(xR - 8) + " " + f1(card3.top + 40) + " " + f1(card3.cx + 100) + " " + f1(card3.cy - 16) + " " + f1(card3.cx) + " " + f1(card3.cy + 8);
+              d2 += " C " + f1(card3.cx - 120) + " " + f1(card3.cy + 44) + " " + f1(SW * 0.16) + " " + f1(y2e - 20) + " 0 " + f1(y2e);
+            }
+            svg2.setAttribute("viewBox", "0 0 " + SW + " " + aboutSec.clientHeight);
+            path2.setAttribute("d", d2);
+            var secTop = aboutSec.getBoundingClientRect().top + window.scrollY;
+            L2 = { len: path2.getTotalLength(), yStart: secTop + img1.cy, yEnd: secTop + y2e };
+            path2.style.strokeDasharray = L2.len;
+            path2.style.strokeDashoffset = L2.len;
+          }
+        }
+        function drawLines() {
+          var vh = window.innerHeight, sy = window.scrollY;
+          if (L2) { var p2 = reduceMotion ? 1 : clamp01((sy + vh * 0.8 - L2.yStart) / (L2.yEnd - L2.yStart)); path2.style.strokeDashoffset = (L2.len * (1 - p2)).toFixed(1); }
+        }
+
+        var ticking = false;
+        function onScrollAll() {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(function () { ticking = false; drawFeatures(); drawLines(); });
+        }
+
+        buildLines();
+        drawFeatures();
+        drawLines();
+        window.addEventListener("scroll", onScrollAll, { passive: true });
+        window.addEventListener("load", function () { buildLines(); drawFeatures(); drawLines(); });
+        if (document.fonts && document.fonts.ready) { document.fonts.ready.then(function () { buildLines(); drawLines(); }); }
+        var resizeTimer = null;
+        window.addEventListener("resize", function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () { buildLines(); drawFeatures(); drawLines(); }, 160);
+        });
+
+      })();
+    
+    </script>
+  </body>
+</html>

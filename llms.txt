@@ -6,10 +6,10 @@ This file summarises NotX Labs for AI search engines and language models. Everyt
 
 ## Products
 
-- [Sparks](https://sparkes.vercel.app): A messaging platform by NotX Labs. Fast chats, voice notes, and built-in voice and video calls, with replies as quote strips, reactions, forwarding and search inside every chat. Live now.
-- [Qovu](https://qovu.vercel.app): A verified attendance system by NotX Labs for lecturers. The lecturer takes a headcount, projects a QR code or shares a 6-digit passcode, and students check in with only their registration number — no student accounts. Check-ins are verified on the server with location checks and a live selfie check, cross-checked against the headcount, with class lists, refused-try logs, and CSV and PDF exports. Live now.
-- Submitiv: A deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the deadline is enforced on the server. Live now.
-- Social AI Studio: An in-development product by NotX Labs that plans and drafts platform-specific social media content with AI. Nothing is published without human approval. LinkedIn and Facebook Pages are planned first, with Instagram next. Not yet available.
+- [Sparks](https://notx-labs.vercel.app/sparks/): A messaging platform by NotX Labs. Fast chats, voice notes, and built-in voice and video calls, with replies as quote strips, reactions, forwarding and search inside every chat. Live now at https://sparkes.vercel.app.
+- [Qovu](https://notx-labs.vercel.app/qovu/): A verified attendance system by NotX Labs for lecturers. The lecturer takes a headcount, projects a QR code or shares a 6-digit passcode, and students check in with only their registration number — no student accounts. Check-ins are verified on the server with location checks and a live selfie check, cross-checked against the headcount, with class lists, refused-try logs, and CSV and PDF exports. Live now at https://qovu.vercel.app.
+- [Submitiv](https://notx-labs.vercel.app/submitiv/): A deadline-controlled submission platform by NotX Labs. Create a request, share one public link, and anyone can submit without an account. Every submission gets a unique reference and an emailed receipt, and the deadline is enforced on the server. Live now.
+- [Social AI Studio](https://notx-labs.vercel.app/studio/): An in-development product by NotX Labs that plans and drafts platform-specific social media content with AI. Nothing is published without human approval. LinkedIn and Facebook Pages are planned first, with Instagram next. Not yet available.
 
 ## Company
 
